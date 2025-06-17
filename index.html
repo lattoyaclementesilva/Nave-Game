@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Nave vs Meteoros - Ranking com Nome</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Nave vs Meteoros</h1>
+    <div id="score">Pontuação: 0</div>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+    <div id="gameOverScreen">
+        <h2>Parabéns! Você destruiu todos os meteoros!</h2>
+        <p id="finalScore"></p>
+
+        <div id="nameInputSection">
+            <label for="playerName">Digite seu nome:</label><br />
+            <input type="text" id="playerName" maxlength="15" />
+            <br /><br />
+            <button id="saveNameBtn" disabled>Salvar no Ranking</button>
+        </div>
+
+        <h3>Ranking:</h3>
+        <ol id="rankingList"></ol>
+
+        <button id="restartBtn" style="display:none;" onclick="restartGame()">Jogar Novamente</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
